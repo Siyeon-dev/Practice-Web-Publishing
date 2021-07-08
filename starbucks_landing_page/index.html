@@ -24,7 +24,8 @@
 			<div class="content">
 				<div class="textBox">
 					<h2>
-						It's not just Coffee<br />It's <span>Starbucks</span>
+						It's not just Coffee<br />It's
+						<span class="title">Starbucks</span>
 					</h2>
 					<p>
 						Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -33,7 +34,7 @@
 						iste distinctio quos iusto impedit consectetur
 						consequatur veniam mollitia!
 					</p>
-					<a href="#">Learn More</a>
+					<a href="#" class="button">Learn More</a>
 				</div>
 				<div class="imgBox">
 					<img
@@ -89,7 +90,11 @@
 
 			function changeCircleColor(color) {
 				const circle = document.querySelector(".circle");
+				const button = document.querySelector(".button");
+				const title = document.querySelector(".title");
 				circle.style.background = color;
+				button.style.background = color;
+				title.style.color = color;
 			}
 		</script>
 	</body>
